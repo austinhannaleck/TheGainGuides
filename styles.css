@@ -1,0 +1,367 @@
+/* General Styling */
+
+body
+{
+    color: white;
+    background: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1
+{
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p
+{
+    font-size: 1.5em;  
+    font-weight: 100;
+}
+
+.button{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: red;
+    border: 3px solid white;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    float: right;
+    border-radius: 10px
+}
+
+.button:hover
+{
+    background-color: rgb(255, 50, 50);    
+}
+
+
+/* HEADER/NAVBAR STYLING */
+
+@keyframes FromTop
+{
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+header
+{
+    position: relative;
+    /* NO BACKGROUND COLOR UNTIL OFF LANDING PAGE
+    background-color: rgba(35, 36, 37, 0.5);
+    */
+    margin-bottom: 5px;
+    transition: background-color 1s;
+    animation: FromTop 1s ease-out;
+}
+
+header:hover
+{
+    background-color: rgba(35, 36, 37, 1);
+}
+
+#nav a
+{
+    transition: color .5s;
+}
+
+#nav a:hover{
+    color: rgb(100, 100, 100);
+}
+
+nav{
+   font-size: 3em;    
+}
+nav ul{
+    float: right; 
+}
+
+nav li{
+    display: inline;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 1065px) {
+    /* For mobile phones or small screen: */
+    nav ul{
+        text-align: center;
+        float: none;   
+    }
+    
+}
+
+.red-text{
+    color: red;   
+}
+
+
+
+/* Home Page Styling */
+
+.intro
+{
+    background-image: url(images/morgan_edit.jpg);
+    height: 600px;
+}
+
+.intro h1
+{
+    color: white;
+    font-weight: 400;
+}
+
+.home-content
+{
+    
+}
+
+.somber
+{
+    display: flex;
+    padding: 0 200px;
+    
+}
+
+.main-info
+{
+    display: flex;
+    padding: 0 300px;
+    text-align: center;
+}
+
+.info-block
+{
+    border: 10px solid black;
+}
+
+.main-info div
+{
+    background-color: rgb(4,4,4);
+}
+
+.line-container
+{
+    text-align: center;
+}
+
+.main-info div hr
+{
+    margin: 15px auto;
+    width: 20%;
+}
+
+.main-info h1
+{
+    font-weight: 400;
+}
+}
+
+.main-info-somber
+{
+    text-align: center;
+}
+
+.main-info-somber-text
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main-info-somber-text h1
+{
+    font-weight: 400;
+}
+
+.main-info-somber img
+{
+    width: 500px;
+}
+
+.programs
+{
+    background-color: rgb(2,2,2);
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.programs h1
+{
+    color: white;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.program
+{
+    width: 450px;
+    margin: auto;
+    background-color: rgb(10,10,10);
+    padding-bottom: 20px;
+}
+
+.programs hr
+{
+    margin: 10px auto;
+    width: 150px;
+}
+
+.program h2
+{
+    background-color: rgb(5,5,5);
+    font-weight: 300;
+}
+
+.program h3
+{
+    font-weight: 200;
+}
+
+.program img
+{
+    margin: 20px 0;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+
+.program ul
+{
+    list-style-type: none;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.button-div
+{
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.button-div h2
+{
+    width: 300px;
+    padding: 5px;
+    margin: auto;
+    font-weight: 400;
+    border: 2px solid white;
+    transition: all .5s;
+}
+
+.button-div h2:hover
+{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/*PROGRAMS STYLING*/
+.program-image{
+    margin: 10px 20px 0 0;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 3px solid grey;
+    float: left;
+}
+
+.program-content
+{
+    padding: 10px 100px;
+}
+
+@media only screen and (max-width: 1065px) {
+    /* For mobile phones or small screen: */
+    .program-image{
+        float: none;
+    }
+    
+}
+
+/* FAQ STYLING */
+
+#faq-box{
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(35, 36, 37, 0.5);
+}
+
+#faq-box h1{
+    border-bottom: solid white 4px; 
+}
+
+.faq-content h2{
+    color: red;   
+}
+
+.faq-content h1{
+    text-align: center;   
+    /* border-bottom: solid white 4px; */
+    margin-bottom: 10px;
+}
+
+label{
+    display: block;
+    color: red;
+    margin: 5px 0 5px 0;
+    font-size: 1.4em;
+}
+
+input[type=text], input[type=email]{
+    width: 50%;   
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+input[type=submit]{
+    /*combine this with button?*/
+    margin-top: 3px;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 3px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    background-color: red;
+    border: 3px solid white;
+    border-radius: 10px;
+    
+}
+
+input[type=submit]:hover{
+    background-color: rgb(255, 50, 50);
+    
+}
+textarea{
+    width: 300px;
+    height: 300px;
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
+/*FOOTER STYLINGS*/
+
+footer{
+    background-color: rgb(35, 36, 37);
+    height: 150px;
+    font-size: 0.8em;
+    opacity: 0.5; 
+    transition: opacity 1s;
+    clear: both;
+}
+
+footer:hover{
+    opacity: 1;   
+}
+footer p{
+    text-align: center;
+}
+
+
