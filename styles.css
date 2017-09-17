@@ -83,6 +83,11 @@ nav li{
     margin-right: 30px;
 }
 
+#logo
+{
+    font-weight: 400;
+}
+
 @media only screen and (max-width: 1065px) {
     /* For mobile phones or small screen: */
     nav ul{
@@ -121,15 +126,69 @@ nav li{
 {
     display: flex;
     padding: 0 200px;
-    
+}
+
+@media only screen and (max-width: 1500px) 
+{
+    .somber
+    {
+        padding: 0 100px;
+    }
 }
 
 .main-info
 {
     display: flex;
-    padding: 0 300px;
+    flex-wrap: wrap;
+    padding: 0 200px;
     text-align: center;
 }
+
+@media only screen and (max-width: 1500px) 
+{
+    .main-info
+    {
+        padding: 0 150px;
+    }
+    .somber
+    {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1065px) 
+{
+    .somber
+    {
+        display: block;
+        padding: 0 50px;
+    }
+    .main-info
+    {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    .main-info
+    {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) 
+{
+    .main-info
+    {
+        padding: 0 10px;
+    }
+    .somber
+    {
+        padding: 0 10px;
+    }
+}
+
 
 .info-block
 {
@@ -195,12 +254,19 @@ nav li{
     font-weight: 400;
 }
 
+.programs-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .program
 {
     width: 450px;
-    margin: auto;
     background-color: rgb(10,10,10);
     padding-bottom: 20px;
+    display: inline-block;
+    margin: 10px;
 }
 
 .programs hr
@@ -220,6 +286,7 @@ nav li{
     font-weight: 200;
 }
 
+/* Image for the program */
 .program img
 {
     margin: 20px 0;
@@ -228,17 +295,44 @@ nav li{
     box-shadow: 10px 10px 5px black;
 }
 
+/* Price for the program */
+.program-price
+{
+    background-color: rgb(10,10,10) !important;
+    font-weight: 00 !important;
+    color: rgb(0, 220, 0);
+}
 
+/* Intro text for the program */
+.program-intro
+{
+    margin-bottom: 10px;
+}
 
 .program ul
 {
+    list-style-position: inside;
     list-style-type: none;
     font-size: 1.2em;
     font-weight: 300;
 }
+
+
+.program li:not(:first-child)
+{
+    text-align: left;
+    padding: 10px 75px;
+}
+
+.program li:first-child
+{
+    margin-bottom: 10px;
+}
+
 .button-div
 {
-    margin: 50px 0 0 0;
+    float: bottom;
+    margin: 10px 0 0 0;
     text-align: center;
 }
 
