@@ -97,9 +97,10 @@ img
 .parallax
 { 
     height: 400px;
-    line-height: 400px; /* must match height to center text within the div */   
-    text-align: center;
-    vertical-align: middle;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

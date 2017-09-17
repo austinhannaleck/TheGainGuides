@@ -9,7 +9,8 @@ body
 
 h1
 {
-    color: red;
+    
+    color: rgb(190, 3, 0);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -265,8 +266,25 @@ nav li{
     width: 450px;
     background-color: rgb(10,10,10);
     padding-bottom: 20px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 10px;
+}
+
+.program-name
+{
+    margin: 0 -10px; /* Override parent (program-top) padding */
+}
+.program-top
+{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.program-bottom
+{
+    
 }
 
 .programs hr
@@ -289,7 +307,7 @@ nav li{
 /* Image for the program */
 .program img
 {
-    margin: 20px 0;
+    margin-top: 15px;
     width: 200px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px black;
@@ -298,19 +316,34 @@ nav li{
 /* Price for the program */
 .program-price
 {
-    background-color: rgb(10,10,10) !important;
-    font-weight: 00 !important;
-    color: rgb(0, 220, 0);
+    background-color: rgb(40, 40, 40);
+    font-weight: 200 !important;
+    color: white;
+    border-radius: 100px;
+    padding: 30px;
+    width: 160px;
+    margin: 20px auto;
 }
 
+.program-price sup
+{
+    font-size: 0.5em;
+}
+.program-price span
+{
+    font-size: 0.4em;
+}
 /* Intro text for the program */
 .program-intro
 {
-    margin-bottom: 10px;
+    background-color: rgb(3,3,3);
+    padding-bottom: 10px;
 }
 
 .program ul
 {
+    padding: 5px;
+    background-color: rgb(5,5,5);
     list-style-position: inside;
     list-style-type: none;
     font-size: 1.2em;
@@ -322,6 +355,16 @@ nav li{
 {
     text-align: left;
     padding: 10px 75px;
+    color: pink;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .program li:not(:first-child)
+    {
+        padding: 10px;
+    }
+
 }
 
 .program li:first-child
@@ -360,11 +403,6 @@ nav li{
     background-color: white;
     border: 3px solid grey;
     float: left;
-}
-
-.program-content
-{
-    padding: 10px 100px;
 }
 
 @media only screen and (max-width: 1065px) {
@@ -444,7 +482,7 @@ textarea{
 
 footer{
     background-color: rgb(35, 36, 37);
-    height: 150px;
+    height: 50px;
     font-size: 0.8em;
     opacity: 0.5; 
     transition: opacity 1s;
