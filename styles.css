@@ -21,24 +21,6 @@ p
     font-weight: 100;
 }
 
-.button{
-    text-transform: uppercase;
-    font-size: 1.2em;
-    background-color: red;
-    border: 3px solid white;
-    display: inline-block;
-    padding: 5px;
-    margin-top: 5px;
-    float: right;
-    border-radius: 10px
-}
-
-.button:hover
-{
-    background-color: rgb(255, 50, 50);    
-}
-
-
 /* HEADER/NAVBAR STYLING */
 
 @keyframes FromTop
@@ -105,6 +87,12 @@ nav li{
 
 
 /* Home Page Styling */
+
+#logo
+{
+    font-size: 4em;
+    color: rgb(200, 13, 10);
+}
 
 .intro
 {
@@ -284,7 +272,7 @@ nav li{
 
 .program-bottom
 {
-    
+    margin-top: 10px;   
 }
 
 .programs hr
@@ -379,17 +367,21 @@ nav li{
     text-align: center;
 }
 
-.button-div h2
+.button
 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    font-weight: 200 !important;
+    background-color: rgba(0,0,0,1);
+    color: white;
     width: 300px;
     padding: 5px;
     margin: auto;
-    font-weight: 400;
     border: 2px solid white;
     transition: all .5s;
 }
 
-.button-div h2:hover
+.button:hover
 {
     background-color: white;
     color: black;
@@ -450,25 +442,6 @@ input[type=text], input[type=email]{
     font-size: 1.5em;
 }
 
-input[type=submit]{
-    /*combine this with button?*/
-    margin-top: 3px;
-    color: white;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    padding: 3px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    background-color: red;
-    border: 3px solid white;
-    border-radius: 10px;
-    
-}
-
-input[type=submit]:hover{
-    background-color: rgb(255, 50, 50);
-    
-}
 textarea{
     width: 300px;
     height: 300px;
@@ -483,7 +456,8 @@ textarea{
 footer{
     background-color: rgb(35, 36, 37);
     height: 50px;
-    font-size: 0.8em;
+    line-height: 50px;
+    font-size: 0.5em;
     opacity: 0.5; 
     transition: opacity 1s;
     clear: both;

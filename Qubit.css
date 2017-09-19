@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+body
+{
+    overflow-x: hidden;
+}
+
 h1
 {
     font-size: 3em;

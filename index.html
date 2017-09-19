@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <meta description="Personal Training Website"/>
         <meta name="keywords" content="training, bodybuilding, personal trainer, excercise, fitness, health, healthy living"/>
+        <meta name="viewport" content="width=400px, maximum-scale=1.0" />
        
         <link rel="stylesheet" href="Qubit.css"/>
         <link rel="stylesheet" href="styles.css"/>
@@ -13,27 +14,18 @@
         <script src="ScrollView.js"></script>
     </head>
     <body>
-        <header class="row">
-            <div class="col-4">
-                <h1 id="logo">The Gain Guides</h1>
-            </div>
-            <div class="col-8">
-                <nav>
-                    <!-- Empty nav -->
-                </nav> 
-            </div>       
-        </header>
         <div id="container">
              <main id="main-content">
                  <div class="row col-12 parallax intro">
+                    <h1 id="logo">The Gains Guide</h1>
                     <h1>Time Tested - Proven Results</h1>
                  </div>
                  <!-- ROW -->
-                 <section class="row somber animatedBlock notViewed" data-position="bottom" data-offset="100">
-                     <div class="col-6 main-info-somber">
+                 <section class="row somber">
+                     <div class="col-6 main-info-somber animatedBlock notViewed" data-position="bottom" data-offset="200">
                          <img src="images/tattoo.jpg">
                      </div>
-                     <div class="col-6 main-info-somber-text">
+                     <div class="col-6 main-info-somber-text animatedBlock notViewed" data-position="bottom" data-offset="200">
                          <h1>My Story</h1>
                          <p>
                              My passion for fitness derived from my own personal struggles with eating. Battling anorexia nervosa for years isn't something I would wish upon my worst enemy-but it did get me to where I am today. I consider myself blessed, blessed to have been a few pounds away from my deathbed and somehow made it out to the other side. This experience of mine is something I will forever hold close to me, and that's because I see it as what created my entire life's purpose-to help others be at peace with themselves. Fitness saved my life. It taught me patience, it taught me discipline, and it taught me how to properly take care of myself. If it could save my life, who says it can't save someone else's?
@@ -43,7 +35,7 @@
                  
                  <!-- ROW -->
                  <section class="row main-info">
-                    <div class="col-6 info-block animatedBlock notViewed" data-position="left" data-offset="50">
+                    <div class="col-6 info-block animatedBlock notViewed" data-position="left" data-offset="350">
                         <h1>Find your balance</h1>
                         <div class="line-container">
                             <hr class="list-bottom">
@@ -52,28 +44,28 @@
                            If you're anything like me, you may experience a bit of an "all or nothing" attitude. Over the years, through trial and error, I've learned that your health and wellness shouldn't be treated as something you either give 100% of yourself to or 0% of yourself to. I promote what I believe in - and that's creating a healthy lifestyle for yourself that's sustainable. I believe in listening to your body, mind, and heart. If you can't see yourself following a certain diet for the rest of your life, it's not going to work. What will work, however, is to entirely drop the diet mindset and focus on a lifestyle. 
                         </p>
                      </div>
-                    <div class="col-6 info-block animatedBlock notViewed" data-position="right" data-offset="50">
+                    <div class="col-6 info-block animatedBlock notViewed" data-position="right" data-offset="350">
                         <h1>Transform Yourself</h1>
                         <div class="line-container">
                             <hr class="list-bottom">
                         </div>
                         <p>
-                            The Gains Guide is something I created geared towards women. This is mainly because, being a woman myself, I understand the common misconceptions about girls and weight lifting. I myself have discovered what techniques to use to achieve the physique and mindset I've always wanted to have, and I want to share that with the world. Aenean eget convallis urna. Donec rhoncus at erat ut viverra. Nam ornare sapien eget porttitor mattis. Etiam in diam et quam tincidunt sodales. Nunc ullamcorper justo ac vestibulum suscipit. Aenean eget convallis urna. Donec rhoncus at erat ut viverra. Nam ornare sapien eget porttitor mattis.
+                            The Gains Guide is something I created geared towards women. This is mainly because, being a woman myself, I understand the common misconceptions about girls and weight lifting. I myself have discovered what techniques to use to achieve the physique and mindset I've always wanted to have, and I want to share that with the world. Women do not have the same hormone profile as men, making this "bulky" look many fear impossible to achieve naturally.
                         </p>
                      </div>
                  </section>
-                 <section class="row programs animatedBlock notViewed" data-position="bottom" data-offset="500">
+                 <section class="row programs">
                      <h1>Programs</h1>
                      <div class="line-container">
                                 <hr class="list-bottom">
                             </div>
                      <section class="col-12 programs-list">
-                        <div class="program">
+                        <div class="program animatedBlock notViewed" data-position="bottom" data-offset="750">
                             <div class="program-top">
                                 <h2 class="program-name">The Gains Guide for Girls</h2>
                                 <img src="images/gains_guide.JPG">
                                 
-                             <h1 class="program-price"><sup>$</sup>50<span>.00</span></h1>
+                             <h1 class="program-price"><sup>$</sup>20<span>.00</span></h1>
                                 <h3 class="program-intro">This 28 page e-book includes:</h3>
                                 <ul>
                                     <li>A 6 day training split designed to achieve strength, endurance, and muscle hypertrophy. This will create a balanced, strong physique!</li>
@@ -87,17 +79,19 @@
                             
                             
                             <div class="program-bottom">
-                                <div class="button-div">
-                                    <h2>Buy Now!</h2>
-                                </div>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="ZGEY6B6XGVCKN">
+                                    <input class="button" type="submit" value="Buy Now!" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                </form>
                             </div>
                             
                          </div>
-                         <div class="program">
+                         <div class="program animatedBlock notViewed" data-position="bottom" data-offset="800">
                              <div class="program-top">
                                 <h2 class="program-name">Custom - Basic</h2>
                              <img src="images/gains_guide_custom_basic.jpg">
-                             <h1 class="program-price"><sup>$</sup>50<span>.00</span></h1>
+                             <h1 class="program-price"><sup>$</sup>15<span>.00</span></h1>
                              <h3 class="program-intro">This workout plan includes:</h3>
                              <ul>
                                 <li>A custom 3-6 day split depending on your personal preference.</li>
@@ -105,18 +99,19 @@
                              </ul>
                              </div>
                             
-                             
                              <div class="program-bottom">
-                                <div class="button-div">
-                                    <h2>Buy Now!</h2>
-                                </div>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="6ZXSQ8WAL9PJ2">
+                                    <input class="button" type="submit" value="Buy Now!" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                </form>
                              </div>
                          </div>
-                         <div class="program">
+                         <div class="program animatedBlock notViewed" data-position="bottom" data-offset="850">
                              <div class="program-top">
                                 <h2 class="program-name">Custom - Advanced</h2>
                              <img src="images/gains_guide_custom_advanced.jpg">
-                             <h1 class="program-price"><sup>$</sup>50<span>.00</span></h1>
+                             <h1 class="program-price"><sup>$</sup>25<span>.00</span></h1>
                              <h3 class="program-intro">This workout plan includes:</h3>
                              <ul>
                                 <li>A custom 3-6 day split depending on your personal preference.</li>
@@ -129,9 +124,11 @@
                             
                              <div class="program-bottom">
                                 
-                                <div class="button-div">
-                                    <h2>Buy Now!</h2>
-                                </div>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="M9K6PRGSPKKWN">
+                                    <input class="button" type="submit" value="Buy Now!" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                 </form>
                              </div>
                              
                          </div>
@@ -139,6 +136,7 @@
                  </section>
             </main>
                  <footer>
+                     <p>Designed by  <a href="www.thecyberarchitect.com">The Cyber Architect &copy; </a></p>
                 </footer>
         </div>
     </body>
